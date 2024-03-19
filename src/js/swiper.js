@@ -37,35 +37,25 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 const swiper2 = new Swiper(".mySwiper2", {
-  // loop: true,
-
-  // autoHeight: true,
-
-  spaceBetween: 100,
+  slidesPerView: "auto",
+  // spaceBetween: -50,
 
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
 
-  // autoplay: {
-  //   delay: 5000,
-  //   pauseOnMouseEnter: true,
-  // },
-
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 
-  // breakpoints: {
-  //   320: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 100,
-  //   },
-  //   1279: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 100,
-  //   },
-  // },
+  breakpoints: {
+    320: {
+      spaceBetween: -100,
+    },
+    768: {
+      spaceBetween: -400,
+    },
+  },
 });
