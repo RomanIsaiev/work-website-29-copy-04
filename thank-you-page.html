@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THANK YOU!</title>
+    <link rel="stylesheet" href="./src/css/thanks.css" />
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "2310243522699693");
+      fbq("track", "PageView");
+      fbq("track", "Lead");
+      fbq("track", "Purchase", {
+        value: 990,
+        currency: "UAH",
+      });
+    </script>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="container">
+        <div class="title-container">
+          <h1 class="title">Дякую тобі</h1>
+          <p class="subtitle">
+            за вибір мого авторського інтенсиву Вино.One Love.
+          </p>
+        </div>
+        <p class="page-desc">
+          Я ціную твоє прагнення дізнатися більше про світ вин і сподіваюсь, що
+          цей курс стане твоїм надійним провідником
+        </p>
+        <a class="back-btn" href="/"
+          ><p>Повернутись на головну</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="4"
+            height="9"
+            viewBox="0 0 4 9"
+            fill="none"
+          >
+            <path
+              d="M0 0.572089L0.594902 -4.76837e-07L3.83518 3.11789C3.88741 3.16785 3.92887 3.22726 3.95715 3.2927C3.98544 3.35813 4 3.42831 4 3.49919C4 3.57007 3.98544 3.64025 3.95715 3.70569C3.92887 3.77112 3.88741 3.83053 3.83518 3.88049L0.594902 7L0.00056076 6.42791L3.04179 3.5L0 0.572089Z"
+              fill="#101010"
+              fill-opacity="0.3"
+            /></svg
+        ></a>
+      </div>
+    </div>
+  </body>
+</html>

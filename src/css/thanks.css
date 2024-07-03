@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "Druk Cyr";
+  src: url(../fonts/DrukCyr-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Druk Cyr";
+  src: url(../fonts/DrukCyr-Bold.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url(../fonts/FUTURAPT-LIGHT.TTF);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url(../fonts/FUTURAPT-BOOK.TTF);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url(../fonts/FUTURAPT-MEDIUM.TTF);
+  font-weight: 450;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url(../fonts/FUTURAPT-DEMI.TTF);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url(../fonts/FUTURAPT-HEAVY.TTF);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url(../fonts/FUTURAPT-BOLD.TTF);
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  background: #e8e0da;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 360px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    max-width: 768px;
+  }
+}
+
+/*  */
+
+.page-wrapper {
+  padding-top: 355px;
+  padding-bottom: 42px;
+
+  background-image: url(../images/thanks-page/thanks-background-mobile-1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .page-wrapper {
+    background-image: url(../images/thanks-page/thanks-background-mobile-2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    max-width: 868px;
+    margin: 0 auto;
+
+    background-image: url(../images/thanks-page/thanks-background-tablet-1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .page-wrapper {
+      background-image: url(../images/thanks-page/thanks-background-tablet-2x.jpg);
+    }
+  }
+}
+
+.title-container {
+  max-width: 222px;
+  margin-bottom: 15px;
+}
+
+.title {
+  color: #86020d;
+  font-family: "Druk Cyr";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #101010;
+  font-family: "Futura PT";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
+}
+
+.page-desc {
+  color: #101010;
+  font-family: "Futura PT";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 15px */
+  letter-spacing: -0.45px;
+
+  max-width: 245px;
+  margin-bottom: 60px;
+}
+
+.back-btn {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+
+  color: rgba(16, 16, 16, 0.3);
+  font-family: "Futura PT";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.42px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .title-container {
+    max-width: 324px;
+  }
+
+  .title {
+    font-size: 96px;
+  }
+
+  .subtitle {
+    font-size: 26px;
+    letter-spacing: -0.52px;
+  }
+
+  .page-desc {
+    font-size: 18px;
+    letter-spacing: -0.55px;
+
+    max-width: 280px;
+    margin-bottom: 180px;
+  }
+
+  .back-btn {
+    font-size: 16px;
+  }
+}
